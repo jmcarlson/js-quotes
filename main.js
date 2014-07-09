@@ -16,6 +16,9 @@ var renderData = function(layoutStyle) {
 		newDataItem.append(
 			'<div>Rating: ' + quoteData[i].rating + '</div>'
 		);
+		newDataItem.append(
+			'<img id="button-remove" src="http://placehold.it/20&text=Remove">'
+		);
 		// Create new DOM element
 		newDataItem.appendTo('.data');
 
@@ -39,13 +42,19 @@ $(document).on('ready', function() {
 		hideInputs();
 		renderData(1);
 	})
+
 	$('#add').on('click', function() {
 		hideInputs();
 		$('.entry-form').slideDown(100);
 	})
+
 	$('#filter').on('click', function() {
 		hideInputs();
 		$('.filter-form').slideDown(100);
+	})
+
+	$(document).on('click', '#button-remove', function() {
+		$(this).parent().remove();
 	})
   
 });

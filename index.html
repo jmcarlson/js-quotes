@@ -15,13 +15,15 @@
 			<img id="filter" src="http://placehold.it/110&text=Filter">
 		</div>
 		<div class="main-box">
-			<div class="entry-form">
+			<form class="entry-form">
 				<textarea name="quote" rows="10" cols="50">Enter quote here</textarea>
 				<input name="author" type="text" value="Enter author here">
-			</div>
-			<div class="filter-form">
-			<input name="search" type="text" value="Enter search string here">
-			</div>
+				<input id="button-add" type="submit" value="Add">
+			</form>
+			<form class="filter-form">
+				<input name="search" type="text" value="Enter search string here">
+				<input id="button-filter" type="submit" value="Filter">
+			</form>
 			<div class="data">
 			</div>
 		</div>
@@ -29,6 +31,7 @@
 
   	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
   	<script src="main.js"></script>
   	<script src="data.js"></script>
 
