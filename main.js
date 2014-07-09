@@ -44,13 +44,22 @@ $(document).on('ready', function() {
 	})
 
 	$('#add').on('click', function() {
-		hideInputs();
-		$('.entry-form').slideDown(100);
+		if($('.entry-form').is(':hidden')) { 
+			$('.entry-form').slideDown(100);
+		}
+		else {
+			$('.entry-form').slideUp(100);
+		}
+
 	})
 
 	$('#filter').on('click', function() {
-		hideInputs();
-		$('.filter-form').slideDown(100);
+		if($('.filter-form').is(':hidden')) { 
+			$('.filter-form').slideDown(100);
+		}
+		else {
+			$('.filter-form').slideUp(100);
+		}
 	})
 
 	$(document).on('click', '#button-remove', function() {
