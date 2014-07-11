@@ -5,16 +5,17 @@ i {
 
 .container {
 	width: 90%;
-	height: 580px;
-	border: 1px solid LightGray;
+	/*height: 580px;*/
+	/*border: 1px solid LightGray;*/
 	margin: 20px;
 }
 
 .nav-box {
-	display: inline-block;
+	/*display: absolute;*/
+	position: absolute;
 	width: 140px;
-	height: 500px;
-	margin-top: 40px;
+	height: 400px;
+	margin-top: 20px;
 	margin-left: 20px;
 	border: 1px solid LightGray;
 }
@@ -24,16 +25,18 @@ i {
 	vertical-align: middle;
 	margin-left: 18px;
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .main-box {
-	display: inline-block;
+	/*display: i*/
+	position: absolute;
 	width: 70%;
-	height: 500px;
-	margin-top: 40px;
-	margin-left: 20px;
+	/*height: 600px;*/
+	margin-top: 20px;
+	margin-left: 180px;
 	border: 1px solid LightGray;
-	overflow: hidden;
+	/*overflow: scroll;*/
 }
 
 .quote-data {
@@ -46,9 +49,6 @@ i {
 }
 
 .quote-data > * {
-	font-size: 12px;
-	color: Gray;
-	/*margin-top: 5px;*/
 	margin-left: 5px;
 }
 
@@ -78,3 +78,49 @@ i {
 .filter-form > * {
 	border-color: LightGray;
 }
+
+.ratings > * {
+	display: inline-block;
+}
+
+.icon-star {
+	display: inline-block;
+	color: LightGray;
+	font-size: 14px;
+}
+
+.gold-star {
+	color: DarkOrange;
+}
+
+.nav-decor1 {
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 10px;
+	border: 1px solid LightGray;
+	width: 80px;
+	height: 350px;
+}
+
+.icon-cancel {
+	font-size: 18px;
+	color: black;
+	position: relative;
+	/*top: 20px;*/
+	/*left: 340px;*/
+	text-align: right;
+}
+
+.quote-text {
+	font-size: 14px;
+	color: black;
+}
+
+.quote-author {
+	margin-left: 10px;
+	margin-bottom: 2px;
+	font-size: 12px;
+	color: Gray;
+}
+
+.
