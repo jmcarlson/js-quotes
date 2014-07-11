@@ -1,6 +1,7 @@
 // Define variable to store data
 var quoteData = [];
 var searchData = [];
+var authorData = [];
 
 quoteData.push({
 	key: 1,
